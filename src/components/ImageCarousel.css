@@ -1,0 +1,434 @@
+/* src/components/HeroSection.css */
+
+/* Base Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+
+  background-color: #fff;
+  min-height: 600px;
+  overflow: hidden;
+  
+}
+
+/* Hero Content */
+.hero-content {
+  position: absolute;
+  margin-top: -160px;
+  margin-left: -600px;
+ 
+  transform: translateY(-50%);
+  z-index: 3;
+  max-width: 800px;
+  text-align: left;
+  color: white;
+  padding: 2.5rem 4rem;
+  
+  border-radius: 0;
+  width: 100%;
+}
+
+.company-name {
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: -90px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.company-tagline {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+}
+
+.explore-button {
+  background-color: #0b3d91;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-left: -100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #062d6b;
+  transform: translateY(-2px);
+}
+
+/* Main Carousel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation Controls */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+/* Vertical Arc Carousel */
+.vertical-carousel {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 400px;
+  height: 400px;
+  z-index: 4;
+  transform-origin: center;
+}
+
+.vertical-slide-container {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  transform-origin: 200px 200px;
+  transition: all 0.3s ease;
+}
+
+/* Position each image along the arc */
+.vertical-slide-container:nth-child(1) {
+  transform: rotate(-15deg) translateX(200px);
+}
+
+.vertical-slide-container:nth-child(2) {
+  transform: rotate(15deg) translateX(200px);
+}
+
+.vertical-slide-container:nth-child(3) {
+  transform: rotate(45deg) translateX(200px);
+}
+
+.vertical-slide-container:nth-child(4) {
+  transform: rotate(75deg) translateX(200px);
+}
+
+.vertical-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid white;
+  transition: all 0.3s ease;
+}
+
+/* Different rotation speeds for each image */
+.vertical-slide-container:nth-child(1) .vertical-slide {
+  animation: spin 8s linear infinite;
+}
+
+.vertical-slide-container:nth-child(2) .vertical-slide {
+  animation: spin 10s linear infinite reverse;
+}
+
+.vertical-slide-container:nth-child(3) .vertical-slide {
+  animation: spin 12s linear infinite;
+}
+
+.vertical-slide-container:nth-child(4) .vertical-slide {
+  animation: spin 14s linear infinite reverse;
+}
+
+.vertical-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Hover effects */
+.vertical-slide-container:hover .vertical-slide {
+  animation-play-state: paused;
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .vertical-carousel {
+    right: 30px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .vertical-slide-container {
+    width: 100px;
+    height: 100px;
+    transform-origin: 175px 175px;
+  }
+
+  .hero-content {
+    max-width: 450px;
+    margin-left: -90px;
+    margin-top: -65px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content {
+    left: 0;
+    padding: 2rem 3rem;
+  }
+
+  .vertical-carousel {
+    right: 20px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .vertical-slide-container {
+    width: 90px;
+    height: 90px;
+    transform-origin: 150px 150px;
+  }
+
+  .company-name {
+    font-size: 40px;
+    margin-left: -10px;
+  }
+
+  .company-tagline {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .hero-content {
+    left: 0;
+    padding: 2rem;
+   
+  }
+
+  .vertical-carousel {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin-top: 400px;
+  }
+
+  .vertical-slide-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    transform: none !important;
+    transform-origin: center !important;
+    animation: none !important;
+  }
+
+  .vertical-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: none !important;
+  }
+
+  .vertical-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-container {
+    height: 400px;
+  }
+
+  .carousel-button {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .carousel-dots {
+    bottom: 15px;
+  }
+
+  .company-name {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .company-tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .explore-button {
+    width: auto;
+    padding: 10px 20px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .hero-content {
+    left: 0;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .company-name {
+    font-size: 28px;
+  }
+
+  .company-tagline {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .vertical-carousel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 15px;
+    margin-top: 350px;
+  }
+
+  .carousel-container {
+    height: 350px;
+  }
+
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .carousel-dots {
+    bottom: 10px;
+    gap: 8px;
+  }
+
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .vertical-slide-container:active .vertical-slide {
+    transform: scale(1.1);
+  }
+
+  .carousel-button:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+  }
+
+  .explore-button:active {
+    transform: translateY(-2px);
+  }
+}
