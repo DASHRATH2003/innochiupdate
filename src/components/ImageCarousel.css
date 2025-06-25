@@ -4,7 +4,6 @@
 .hero-section {
   position: relative;
   width: 100%;
-
   background-color: #fff;
   min-height: 600px;
   overflow: hidden;
@@ -23,7 +22,7 @@
   text-align: left;
   color: white;
   padding: 2.5rem 4rem;
-  
+  margin-left: -300px;
   border-radius: 0;
   width: 100%;
 }
@@ -31,7 +30,7 @@
 .company-name {
   font-size: 55px;
   font-weight: bold;
-  margin-left: -90px;
+  margin-left: -600px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -39,6 +38,8 @@
 .company-tagline {
   font-size: 18px;
   line-height: 1.6;
+  margin-left: -250px;
+
   margin-bottom: 30px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   max-width: 600px;
@@ -52,7 +53,7 @@
   font-size: 16px;
   font-weight: 600;
   border-radius: 8px;
-  margin-left: -100px;
+  margin-left: -600px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -373,6 +374,7 @@
     left: 0;
     padding: 1.5rem;
     width: 100%;
+    
   }
 
   .company-name {
@@ -381,6 +383,8 @@
 
   .company-tagline {
     font-size: 13px;
+    margin-left: -30px;
+
     line-height: 1.4;
   }
 
