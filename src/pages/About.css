@@ -76,7 +76,7 @@
   text-align: center;
   margin-bottom: 50px;
   position: relative;
-  background-color: red;
+  
 }
 
 h2.section-title {
@@ -93,7 +93,7 @@ h2.section-title {
 .title-divider {
   width: 80px;
   height: 4px;
-  background-color: red;
+
   background: #e74c3c;
   margin: 0 auto 1.5rem;
   border-radius: 2px;
@@ -102,7 +102,7 @@ h2.section-title {
 .section-description {
   font-size: 1.2rem;
   color: #555;
-  background-color: red;
+  
   max-width: 800px;
   margin: 0 auto;
 }
