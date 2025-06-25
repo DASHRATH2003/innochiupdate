@@ -12,6 +12,8 @@ import ScrollToTop from './components/ScrollToTop';
 import LanguageSelector from './components/LanguageSelector';
 import TopBar from './components/TopBar';
 import ChatBox from './components/ChatBox';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 import './App.css';
 
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/products/herbs" element={<AllProducts category="herbs" />} />
           <Route path="/products/seeds" element={<AllProducts category="seeds" />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
         <Footer />
       </div>

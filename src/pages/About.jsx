@@ -22,7 +22,7 @@ const About = () => {
           />
           <div className="hero-overlay"></div>
           <div className="hero-content">
-            <h1 className="hero-title">About Inochi International</h1>
+            <h1 className="hero-title">About Me</h1>
             <p className="hero-subtitle">
               Your Gateway to Premium Indian Exports
             </p>
