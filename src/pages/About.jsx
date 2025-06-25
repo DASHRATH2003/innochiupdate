@@ -44,8 +44,8 @@ const About = () => {
         {/* Expertise Section */}
         <section className="expertise-section">
           <div className="container">
+          <h2 className="section-title">Our Experties</h2>
             <div className="section-header">
-              <h2 className="section-title">Our Expertise</h2>
               <div className="title-divider"></div>
               <p className="section-description">
                 At Inochi International, we specialize in:
@@ -99,8 +99,9 @@ const About = () => {
         {/* Quality & Safety Section */}
         <section className="quality-safety-section">
           <div className="container">
+          <h2 className="section-title">Quality & Safety</h2>
             <div className="section-header">
-              <h2 className="section-title">Quality & Safety</h2>
+
               <div className="title-divider"></div>
               <p className="section-intro">
                 At Inochi International, quality isn't just a process - it's our
