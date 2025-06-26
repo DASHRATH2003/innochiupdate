@@ -34,7 +34,7 @@ import mustard from '../assets/Mustard.png';
 import parsley from '../assets/Parsley.webp';
 import pomegranate from '../assets/Pomegranate Seed.jpg';
 import saffron from '../assets/saffron11.avif';
-import vanilla from '../assets/Vanila11.jpg';
+import vanilla from '../assets/vanila11.jpg';
 import tejpat from '../assets/tejpat.webp';
 import longPepper from '../assets/Long Pepper.jpg';
 import starAnise from '../assets/Star Anise.jpeg';
