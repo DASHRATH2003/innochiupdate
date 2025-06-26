@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
@@ -13,7 +12,11 @@ const Footer = () => {
         {/* Company Info Section */}
         <div className="footer-section">
           <div className="footer-logo">
-            <img src={logo} alt="Inochi International Logo" style={{ filter: 'brightness(0) saturate(100%) invert(27%) sepia(91%) saturate(1375%) hue-rotate(201deg) brightness(91%) contrast(101%)' }} />
+            <img
+              src={logo}
+              alt="Inochi International Logo"
+              className="footer-logo-img"
+            />
           </div>
           <p className="company-description">
             Your trusted partner in global trade, specializing in premium quality Indian products.

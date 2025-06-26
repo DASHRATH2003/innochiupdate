@@ -33,7 +33,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="contact-hero fade-in">
         <div className="contact-hero-content">
-          <h1>Get in Touch</h1>
+          <h1>Join Us Our Journey</h1>
           <p>Connect with us for global trade opportunities</p>
         </div>
       </section>
@@ -220,17 +220,7 @@ const Contact = () => {
                   </address>
                 </div>
 
-                <div className="info-section certifications slide-in-right delay-2">
-                  <h3>Our Certifications</h3>
-                  <ul>
-                    <li><i className="fas fa-certificate"></i> ISO 9001:2015</li>
-                    <li><i className="fas fa-award"></i> FSSAI Certified</li>
-                    <li><i className="fas fa-star"></i> GMP Certified</li>
-                    <li><i className="fas fa-check-circle"></i> APEDA Registered</li>
-                  </ul>
-                </div>
-
-                <div className="info-section social-info slide-in-right delay-3">
+                <div className="info-section social-info slide-in-right delay-2">
                   <h3>Connect With Us</h3>
                   <div className="social-links">
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

@@ -50,24 +50,27 @@
 }
 
 .navbar-logo-img {
-  height: 75px;
   width: auto;
-  transition: all 0.3s ease;
-  animation: rotate360 20s linear infinite;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+  height: 80px;
+  animation: rotateLogo 8s linear infinite;
+  filter: brightness(1) saturate(100%);
 }
 
-@keyframes rotate360 {
+.navbar-logo-img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rotateLogo {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
 
 .scrolled .navbar-logo-img {
-  height: 65px;
+  height: 75px;
 }
 
 /* Menu Icon (Hamburger) */

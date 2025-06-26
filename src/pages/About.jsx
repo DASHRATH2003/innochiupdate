@@ -22,15 +22,14 @@ const About = () => {
           />
           <div className="hero-overlay"></div>
           <div className="hero-content">
-            <h1 className="hero-title">About Me</h1>
+            <h1 className="hero-title">About Us</h1>
             <p className="hero-subtitle">
               Your Gateway to Premium Indian Exports
             </p>
             <p className="intro-text">
               Welcome to Inochi International Pvt. Ltd, a Bangalore-based
               exporter of the finest Indian spices and premium basmati rice.
-              Established in 2023 and headquartered in Doddanekundi (Postal
-              Code: 560037), we bring the vibrant flavors of India directly to
+              Established in 2023 and headquartered in Doddanekundi (Bangalore), we bring the vibrant flavors of India directly to
               discerning customers in Japan and beyond.
             </p>
           </div>

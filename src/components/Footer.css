@@ -21,12 +21,19 @@
 
 .footer-logo {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo img {
   max-width: 180px;
   height: auto;
-  margin-left: -49px;
+  margin-left: 0;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
 }
 
 .company-description {
@@ -34,7 +41,7 @@
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 27px;
-  margin-top: -50px;
+  margin-top: 20px;
   max-width: 350px;
 }
 
