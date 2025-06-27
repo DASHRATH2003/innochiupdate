@@ -31,7 +31,7 @@ const ImageCarousel = () => {
 
   return (
     <div className="hero-section">
-      <div className="hero-content">
+      <div className="hero-content ">
         <h1 className="company-name">Inochi International</h1>
         <p className="company-tagline">
           Excellence in Global Spice Trade. Delivering the finest quality spices <br />

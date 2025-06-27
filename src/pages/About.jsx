@@ -14,8 +14,8 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero">
-        <div className="hero-content">
-          <h1 className="hero-title">About Us</h1>
+        <div className="hero-about">
+          <h1 className="about-title">About Us</h1>
         </div>
       </section>
 
