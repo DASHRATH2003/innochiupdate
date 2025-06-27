@@ -14,9 +14,12 @@
 /* Hero Section */
 .about-hero {
   position: relative;
-  height: 70vh;
-  min-height: 500px;
-  overflow: hidden;
+  height: 200px;
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-image-container {
@@ -43,8 +46,8 @@
 
 .hero-content {
   position: absolute;
-  top: 60%;
-  left: 75%;
+  top: 120%;
+  left: 70%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
@@ -57,10 +60,10 @@
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-top: 100px;
-  
-  margin-bottom: 1rem;
+  margin: 0;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-subtitle {
@@ -68,6 +71,43 @@
   font-weight: 300;
   margin-bottom: 2rem;
   color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.welcome-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-img-container {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.welcome-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-top: 20px;
 }
 
 /* Section Styles */
@@ -576,34 +616,27 @@ section-header {
     font-size: 3rem;
   }
   
-  .expertise-card,
-  .expertise-card.reverse {
+  .welcome-content {
     flex-direction: column;
   }
   
-  .expertise-img-container {
-    min-height: 300px;
+  .welcome-text,
+  .welcome-img-container {
     width: 100%;
-  }
-  
-  .reach-content,
-  .certifications-content {
-    flex-direction: column;
   }
 }
 
 @media (max-width: 768px) {
   .about-hero {
-    height: 60vh;
-    min-height: 400px;
+    height: 250px;
   }
   
   .hero-title {
     font-size: 2.5rem;
   }
   
-  .hero-subtitle {
-    font-size: 1.2rem;
+  .welcome-section {
+    padding: 60px 0;
   }
   
   .section-title {
@@ -621,22 +654,14 @@ section-header {
 
 @media (max-width: 480px) {
   .about-hero {
-    height: 50vh;
-    min-height: 300px;
+    height: 200px;
   }
   
   .hero-title {
     font-size: 2rem;
-    margin-top: 35px;
-    
-  }
-  .hero-content{
-    font-size: 5px;
-    margin-left: -90px;
-    
   }
   
-  .hero-subtitle {
+  .welcome-description {
     font-size: 1rem;
   }
   

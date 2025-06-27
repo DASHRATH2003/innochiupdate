@@ -132,20 +132,7 @@ const GlobalNetwork = () => {
           </ul>
         </div>
 
-        <div className="global-network__stats">
-          <div className="global-network__stat">
-            <span className="global-network__stat-number">20+</span>
-            <span className="global-network__stat-label">Countries</span>
-          </div>
-          <div className="global-network__stat">
-            <span className="global-network__stat-number">100+</span>
-            <span className="global-network__stat-label">Partners</span>
-          </div>
-          <div className="global-network__stat">
-            <span className="global-network__stat-number">500+</span>
-            <span className="global-network__stat-label">Products</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

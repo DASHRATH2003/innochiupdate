@@ -99,26 +99,7 @@ const FutureProducts = () => {
 
       
 
-      <div className="quality-commitment fade-in">
-        <div className="commitment-content">
-          <h3>Our Commitment to Excellence</h3>
-          <p>We're constantly innovating to bring you the finest quality spices while ensuring sustainable practices and supporting local farming communities.</p>
-          <div className="commitment-stats">
-            <div className="stat">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Quality Assured</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Partner Farms</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">20+</span>
-              <span className="stat-label">Countries Served</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 };

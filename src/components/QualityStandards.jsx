@@ -8,12 +8,94 @@ import spiceboardLogo from '../assets/spiceboard.webp';
 import dgftLogo from '../assets/Directorgeneraforeation.webp';
 import CertificateModal from './CertificateModal';
 
+// Counter Animation Hook
+const useCounterAnimation = (end, duration = 3500) => {
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime;
+    let animationFrame;
+
+    const animate = (currentTime) => {
+      if (!startTime) startTime = currentTime;
+      const progress = (currentTime - startTime) / duration;
+
+      if (progress < 1) {
+        setCount(Math.floor(end * progress));
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, [end, duration, isVisible]);
+
+  return [count, elementRef];
+};
+
 const QualityStandards = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   const certificatesRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [selectedCertificate, setSelectedCertificate] = useState(null);
+
+  // Stats data
+  const stats = [
+    {
+      value: 100,
+      suffix: "%",
+      label: "Quality Assured"
+    },
+    {
+      value: 50,
+      suffix: "+",
+      label: "Partner Farms"
+    },
+    {
+      value: 20,
+      suffix: "+",
+      label: "Countries Served"
+    }
+  ];
+
+  // Initialize counter hooks individually
+  const [count1, ref1] = useCounterAnimation(stats[0].value);
+  const [count2, ref2] = useCounterAnimation(stats[1].value);
+  const [count3, ref3] = useCounterAnimation(stats[2].value);
+  const counters = [[count1, ref1], [count2, ref2], [count3, ref3]];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -127,6 +209,30 @@ const QualityStandards = () => {
           ))}
         </div>
 
+        <div className="stats-section">
+          <div className="stats-content">
+            <h2>Our Global Reach</h2>
+            <div className="stats-grid">
+              {stats.map((stat, index) => (
+                <div 
+                  className="stat" 
+                  key={index} 
+                  ref={counters[index][1]}
+                  style={{ '--delay': `${index * 0.2}s` }}
+                >
+                  <div className="stat-content">
+                    <span className="stat-number">
+                      {counters[index][0]}
+                      {stat.suffix}
+                    </span>
+                    <span className="stat-label">{stat.label}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="certificates-section" id="certificates-section">
           <h3 className="certificates-title">Our Certifications & Registrations</h3>
           <div 
@@ -158,21 +264,6 @@ const QualityStandards = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        <div className="quality-stats">
-          <div className="stat-item">
-            <span className="stat-number">100%</span>
-            <span className="stat-label">Quality Assured</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">50+</span>
-            <span className="stat-label">Quality Tests</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">25+</span>
-            <span className="stat-label">Years Experience</span>
           </div>
         </div>
       </div>

@@ -14,22 +14,28 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section className="about-hero">
-        <div className="hero-image-container">
-          <img
-            src={heroImage}
-            alt="Inochi International"
-            className="hero-img"
-          />
-          <div className="hero-overlay"></div>
-          <div className="hero-content">
-            <h1 className="hero-title">About Us</h1>
-           
-            <p className="intro-text">
-              Welcome to Inochi International Pvt. Ltd, a Bangalore-based
-              exporter of the finest Indian spices and premium basmati rice.
-              Established in 2023 and headquartered in Doddanekundi (Bangalore), we bring the vibrant flavors of India directly to
-              discerning customers in Japan and beyond.
-            </p>
+        <div className="hero-content">
+          <h1 className="hero-title">About Us</h1>
+        </div>
+      </section>
+
+      {/* Welcome Section */}
+      <section className="welcome-section">
+        <div className="container">
+          <div className="welcome-content">
+            <div className="welcome-text">
+              <h2 className="section-title">Welcome to Inochi International</h2>
+              <div className="title-divider"></div>
+              <p className="welcome-description">
+                Welcome to Inochi International Pvt. Ltd, a Bangalore-based
+                exporter of the finest Indian spices and premium basmati rice.
+                Established in 2023 and headquartered in Doddanekundi (Bangalore), we bring the vibrant flavors of India directly to
+                discerning customers in Japan and beyond.
+              </p>
+            </div>
+            <div className="welcome-img-container">
+              <img src={heroImage} alt="Welcome to Inochi" className="welcome-img" />
+            </div>
           </div>
         </div>
       </section>

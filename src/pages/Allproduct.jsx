@@ -74,7 +74,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 2,
-      name: ' Black Cardamom ',
+      name: '  Black Cardamom ',
       image: cardamomLarge,
       category: 'spices',
       description: 'High-grade large cardamom sourced from the Himalayan foothills. Features a unique bold and smoky flavor profile. Essential for authentic Indian and Middle Eastern cuisine.'
