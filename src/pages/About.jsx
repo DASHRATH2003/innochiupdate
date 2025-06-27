@@ -5,6 +5,7 @@ import "../styles/quality.css";
 
 import heroImage from "../assets/qualityansepty.jpeg";
 import spicesImage from "../assets/spiceexport.webp";
+import aboutImage from "../assets/indianspiceall.jpg"
 import qualityImage from "../assets/Basmatirice.jpg";
 import reachImage from "../assets/reachimage.jpg";
 import certificationImage from "../assets/certificate1.webp";
@@ -39,6 +40,39 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section className="about-section">
+  <div className="about-container">
+    <div className="about-image">
+      <img src={aboutImage} alt="Inochi Spices" />
+    </div>
+    <div className="about-text">
+      <h2>About Our Products</h2>
+      <div className="title-underline">
+        <div className="line-yellow"></div>
+        <div className="line-blue"></div>
+      </div>
+      <p>
+        Inochi International stands at the intersection of heritage and innovation.
+        With direct partnerships in India, Vietnam, and Turkey, we maintain complete
+        control over sourcing, ensuring every spice we deliver reflects purity,
+        potency, and purpose. Whether it's turmeric from Tamil Nadu or pepper from
+        Kerala, our products uphold the legacy of spice-rich trade, with a modern
+        commitment to transparency and global excellence.
+      </p>
+      <br />
+      <p>
+        At Inochi International, we are committed to redefining the global spice trade
+        with integrity, innovation, and a relentless focus on quality. As a trusted
+        name in premium spice exports and imports, we serve global markets with a
+        diverse range of handpicked, ethically sourced spices that tell a story of
+        tradition and taste.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Main Content */}
       <main className="about-main-content">
