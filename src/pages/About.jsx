@@ -3,7 +3,7 @@ import React from "react";
 import "./About.css";
 import "../styles/quality.css";
 
-import heroImage from "../assets/qualityansepty.jpeg";
+import heroImage from "../assets/spiceinternational.png";
 import spicesImage from "../assets/spiceexport.webp";
 import aboutImage from "../assets/indianspiceall.jpg"
 import qualityImage from "../assets/Basmatirice.jpg";
@@ -25,13 +25,17 @@ const About = () => {
         <div className="container">
           <div className="welcome-content">
             <div className="welcome-text">
-              <h2 className="section-title">Welcome to Inochi International</h2>
-              <div className="title-divider"></div>
+            <h2><span class="welcome-text">Welcome</span> To Inochi international</h2>
+
+              <div className="line-yellow"></div>
+              
               <p className="welcome-description">
                 Welcome to Inochi International Pvt. Ltd, a Bangalore-based
                 exporter of the finest Indian spices and premium basmati rice.
                 Established in 2023 and headquartered in Doddanekundi (Bangalore), we bring the vibrant flavors of India directly to
                 discerning customers in Japan and beyond.
+
+                At Inochi International, we specialize in the global export and import of premium-quality goods, with a primary focus on Indian spices, agri-commodities, and food-grade products. Headquartered in India, we operate with a commitment to transparency, sustainability, and excellence in every shipment we handle. Our global trade network spans across Asia, Europe, the Middle East, Africa, and North America.
               </p>
             </div>
             <div className="welcome-img-container">
