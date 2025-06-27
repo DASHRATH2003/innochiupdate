@@ -9,23 +9,23 @@ import ProductCard from '../components/ProductCard';
 import cardamomSmall from '../assets/cardamom.jpg';
 import cardamomLarge from '../assets/cardamomlarge.webp';
 import pepper from '../assets/pepper.jpg';
-import birdsEyeChilli from '../assets/Chili.jpg';
+import birdsEyeChilli from '../assets/birdseyechiliphoto.avif';
 import capsicum from '../assets/Capsicum.webp';
-import chilli from '../assets/chilli.webp';
+import chilli from '../assets/redchili.jpg';
 import paprika from '../assets/paprika.webp';
 import ginger from '../assets/ganger11.webp';
 import turmeric from '../assets/turemeric.jpg';
-import coriander from '../assets/coriyande.jpg';
+import coriander from '../assets/coriyanderseeds.jpg';
 import cumin from '../assets/Cumin.jpg';
 import fennel from '../assets/whitepepp11.jpg';
 import fenugreek from '../assets/Fenugreek.webp';
-import celery from '../assets/Celery.jpg';
+import celery from '../assets/caleryseeds.jpg';
 import aniseed from '../assets/Aniseed.webp';
 import ajowan from '../assets/Ajowan (Ajwain).jpg';
 import caraway from '../assets/Caraway.webp';
 import dill from '../assets/Dill.jpg';
 import cinnamon from '../assets/Cinnamon.webp';
-import cassia from '../assets/cassia11.webp';
+import cassia from '../assets/cassiabark.jpg';
 import garlic from '../assets/Garlic.webp';
 import curry from '../assets/carryleaves.png';
 import kokam from '../assets/Kokam.jpg';
@@ -53,7 +53,7 @@ import marjoram from '../assets/marjoram11.jpg';
 import nutmeg from '../assets/Nutmeg.webp';
 import mace from '../assets/Mace.webp';
 import basil from '../assets/basilhd.webp';
-import poppy from '../assets/Poppy Seed.jpg';
+import poppy from '../assets/whiteseeds.webp';
 import allspice from '../assets/Allspice.webp';
 import rosemary from '../assets/Rosemary.jpg';
 import sage from '../assets/Sage.webp';
@@ -74,7 +74,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 2,
-      name: 'Cardamom (Large)',
+      name: ' Black Cardamom ',
       image: cardamomLarge,
       category: 'spices',
       description: 'High-grade large cardamom sourced from the Himalayan foothills. Features a unique bold and smoky flavor profile. Essential for authentic Indian and Middle Eastern cuisine.'
@@ -158,7 +158,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 14,
-      name: 'Celery',
+      name: 'Celery Seed',
       image: celery,
       category: 'spices',
       description: 'Premium celery seeds with strong aroma. Known for their earthy and slightly bitter taste. Adds depth to soups, stews, and pickles.'

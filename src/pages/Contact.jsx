@@ -1,24 +1,24 @@
 // src/pages/Contact.jsx
-import React, { useState } from 'react';
-import './Contact.css';
-import '../styles/animations.css';
+import React, { useState } from "react";
+import "./Contact.css";
+import "../styles/animations.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    country: '',
-    subject: '',
-    inquiryType: 'general',
-    message: ''
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    country: "",
+    subject: "",
+    inquiryType: "general",
+    message: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -49,7 +49,9 @@ const Contact = () => {
                 </div>
                 <h3>Customer Support</h3>
                 <p>24/7 dedicated support for our global clients</p>
-                <a href="tel:+919535520948" className="contact-link">+91 9535520948</a>
+                <a href="tel:+919535520948" className="contact-link">
+                  +91 9535520948
+                </a>
               </div>
               <div className="quick-contact-card slide-in-left delay-1">
                 <div className="icon-circle">
@@ -57,7 +59,12 @@ const Contact = () => {
                 </div>
                 <h3>Email Us</h3>
                 <p>Quick response for your inquiries</p>
-                <a href="mailto:vijaykumar@inochiinternational.com" className="contact-link">vijaykumar@inochiinternational.com</a>
+                <a
+                  href="mailto:vijaykumar@inochiinternational.com"
+                  className="contact-link"
+                >
+                  Vijayakumar@inochiinternational.com
+                </a>
               </div>
               <div className="quick-contact-card slide-in-left delay-2">
                 <div className="icon-circle">
@@ -78,8 +85,11 @@ const Contact = () => {
               {/* Contact Form */}
               <div className="form-container scale-up">
                 <h2>Send Us a Message</h2>
-                <p className="form-subtitle">Fill out the form below and our team will get back to you within 24 hours</p>
-                
+                <p className="form-subtitle">
+                  Fill out the form below and our team will get back to you
+                  within 24 hours
+                </p>
+
                 <form onSubmit={handleSubmit} className="contact-form">
                   <div className="form-grid">
                     <div className="form-group">
@@ -162,7 +172,9 @@ const Contact = () => {
                         <option value="export">Export Query</option>
                         <option value="products">Product Information</option>
                         <option value="quotation">Request Quotation</option>
-                        <option value="partnership">Business Partnership</option>
+                        <option value="partnership">
+                          Business Partnership
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -203,7 +215,10 @@ const Contact = () => {
               <div className="contact-info-sidebar">
                 <div className="info-section company-info slide-in-right">
                   <h3>Inochi International</h3>
-                  <p>Your trusted partner in global trade, specializing in premium quality Indian spices, herbs, and seeds.</p>
+                  <p>
+                    Your trusted partner in global trade, specializing in
+                    premium quality Indian spices, herbs, and seeds.
+                  </p>
                 </div>
 
                 <div className="info-section address-info slide-in-right delay-1">
@@ -223,18 +238,80 @@ const Contact = () => {
                 <div className="info-section social-info slide-in-right delay-2">
                   <h3>Connect With Us</h3>
                   <div className="social-links">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >
                       <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >
                       <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >
                       <i className="fab fa-facebook"></i>
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >
                       <i className="fab fa-instagram"></i>
                     </a>
+                  </div>
+                </div>
+
+                <div className="info-section certifications-info slide-in-right delay-3">
+                  <h3>Our Certifications</h3>
+                  <div className="certifications-grid">
+                    <div className="certification-item">
+                      <div className="certification-icon">
+                        <i className="fas fa-certificate"></i>
+                      </div>
+                      <div className="certification-details">
+                        <h4>ISO 9001:2015</h4>
+                        <p>Quality Management System</p>
+                      </div>
+                    </div>
+                    <div className="certification-item">
+                      <div className="certification-icon">
+                        <i className="fas fa-shield-alt"></i>
+                      </div>
+                      <div className="certification-details">
+                        <h4>FSSAI Certified</h4>
+                        <p>Food Safety Standards</p>
+                      </div>
+                    </div>
+                    <div className="certification-item">
+                      <div className="certification-icon">
+                        <i className="fas fa-leaf"></i>
+                      </div>
+                      <div className="certification-details">
+                        <h4>Spice Board India</h4>
+                        <p>Ministry of Commerce & Industry</p>
+                      </div>
+                    </div>
+                    <div className="certification-item">
+                      <div className="certification-icon">
+                        <i className="fas fa-check-circle"></i>
+                      </div>
+                      <div className="certification-details">
+                        <h4>APEDA Registered</h4>
+                        <p>Export Development Authority</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

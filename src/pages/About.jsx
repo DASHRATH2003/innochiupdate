@@ -23,9 +23,7 @@ const About = () => {
           <div className="hero-overlay"></div>
           <div className="hero-content">
             <h1 className="hero-title">About Us</h1>
-            <p className="hero-subtitle">
-              Your Gateway to Premium Indian Exports
-            </p>
+           
             <p className="intro-text">
               Welcome to Inochi International Pvt. Ltd, a Bangalore-based
               exporter of the finest Indian spices and premium basmati rice.
