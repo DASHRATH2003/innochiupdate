@@ -88,6 +88,11 @@ const QualityStandards = () => {
       value: 20,
       suffix: "+",
       label: "Countries Served"
+    },
+    {
+      value: 15,
+      suffix: "+",
+      label: "Years Experience"
     }
   ];
 
@@ -95,7 +100,8 @@ const QualityStandards = () => {
   const [count1, ref1] = useCounterAnimation(stats[0].value);
   const [count2, ref2] = useCounterAnimation(stats[1].value);
   const [count3, ref3] = useCounterAnimation(stats[2].value);
-  const counters = [[count1, ref1], [count2, ref2], [count3, ref3]];
+  const [count4, ref4] = useCounterAnimation(stats[3].value);
+  const counters = [[count1, ref1], [count2, ref2], [count3, ref3], [count4, ref4]];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
