@@ -140,7 +140,7 @@ const About = () => {
         {/* Quality & Safety Section */}
         <section className="quality-safety-section">
           <div className="container">
-          <h2 className="section-title">Quality & Safety</h2>
+          <h2 className="section-title">Quality & Health</h2>
             <div className="section-header">
 
               <div className="title-divider"></div>
@@ -194,7 +194,7 @@ const About = () => {
                   international standards:
                 </p>
                 <ul className="quality-features">
-                  <li>ISO 22000 certified facilities</li>
+                  <li>ISO 9001:2015</li>
                   <li>Regular microbial testing</li>
                   <li>Positive air pressure rooms</li>
                   <li>Employee hygiene protocols</li>

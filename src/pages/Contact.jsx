@@ -49,9 +49,14 @@ const Contact = () => {
                 </div>
                 <h3>Customer Support</h3>
                 <p>24/7 dedicated support for our global clients</p>
-                <a href="tel:+919535520948" className="contact-link">
-                  +91 9535520948
-                </a>
+                <div className="contact-links">
+                  <a href="tel:+919535520948" className="contact-link">
+                    <i className="fas fa-phone"></i> +91 9535520948
+                  </a>
+                  <a href="tel:+91 7892492739" className="contact-link">
+                    <i className="fas fa-phone"></i> +91 7892492739
+                  </a>
+                </div>
               </div>
               <div className="quick-contact-card slide-in-left delay-1">
                 <div className="icon-circle">
@@ -59,12 +64,14 @@ const Contact = () => {
                 </div>
                 <h3>Email Us</h3>
                 <p>Quick response for your inquiries</p>
-                <a
-                  href="mailto:vijaykumar@inochiinternational.com"
-                  className="contact-link"
-                >
-                  Vijayakumar@inochiinternational.com
-                </a>
+                <div className="contact-links">
+                  <a href="mailto:vijaykumar@inochiinternational.com" className="contact-link">
+                    <i className="fas fa-envelope"></i> vijaykumar@inochiinternational.com
+                  </a>
+                  <a href="mailto:Rajesh@inochiinternational.com" className="contact-link">
+                    <i className="fas fa-envelope"></i> Rajesh@inochiinternational.com
+                  </a>
+                </div>
               </div>
               <div className="quick-contact-card slide-in-left delay-2">
                 <div className="icon-circle">

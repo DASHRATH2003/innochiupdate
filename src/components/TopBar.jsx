@@ -26,6 +26,10 @@ const TopBar = () => {
             <i className="fas fa-envelope"></i>
             <span>Vijayakumar@inochiinternational.com</span>
           </a>
+          <a href="mailto:vijaykumar@inochiinternational.com" className="contact-item">
+            <i className="fas fa-envelope"></i>
+            <span>Rajesh@inochiinternational.com</span>
+          </a>
         </div>
       </div>
     </div>

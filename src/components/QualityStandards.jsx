@@ -85,14 +85,14 @@ const QualityStandards = () => {
       label: "Partner Farms"
     },
     {
-      value: 20,
+      value: 60,
       suffix: "+",
-      label: "Countries Served"
+      label: "Spices Handled"
     },
     {
       value: 15,
       suffix: "+",
-      label: "Years Experience"
+      label: "Years Experience for Spice Handling"
     }
   ];
 
@@ -192,6 +192,7 @@ const QualityStandards = () => {
     <section className="quality-standards" ref={sectionRef}>
       <div className={`quality-content ${isVisible ? 'animate-in' : ''}`}>
         <div className="quality-header">
+
           <h2 className="quality-title">
             Commitment to <span className="highlight">Excellence</span>
           </h2>

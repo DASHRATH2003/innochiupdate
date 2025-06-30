@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './CompanyValues.css';
 import qualityImage from '../assets/qualityansepty.jpeg';
 import reachImage from '../assets/reachimage.jpg';
 import visionImage from '../assets/ourvision.jpeg';
 
 const CompanyValues = () => {
+  const navigate = useNavigate();
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -34,6 +36,10 @@ const CompanyValues = () => {
     };
   }, []);
 
+  const handleLearnMore = () => {
+    navigate('/contact');
+  };
+
   const values = [
     {
       title: "Our Vision",
@@ -60,7 +66,7 @@ const CompanyValues = () => {
       description: "Connecting farmers and consumers across continents, creating value through our global network of sustainable spice trade.",
       image: reachImage,
       points: [
-        "20+ countries served",
+        "20+ Targeted Countries ",
         "50+ partner farms",
         "Global distribution network"
       ]
@@ -114,7 +120,7 @@ const CompanyValues = () => {
             revolutionize the global spice trade while maintaining the highest
             standards of quality and sustainability.
           </p>
-          <button className="cta-button">
+          <button className="cta-button" onClick={handleLearnMore}>
             Learn More
             <span className="button-arrow">→</span>
           </button>

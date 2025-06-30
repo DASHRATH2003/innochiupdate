@@ -17,12 +17,16 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
 .app {
+  min-height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 main {

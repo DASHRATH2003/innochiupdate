@@ -3,9 +3,6 @@ import './FutureProducts.css';
 import cardamom from '../assets/cardamom.jpg';
 import turmeric from '../assets/turemeric.jpg';
 import pepper from '../assets/pepper.jpg';
-import cinnamon from '../assets/Cinnamon.webp';
-import clove from '../assets/Clove.webp';
-import cumin from '../assets/Cumin.jpg';
 
 const FutureProducts = () => {
   const observerRef = useRef(null);
@@ -50,56 +47,34 @@ const FutureProducts = () => {
     }
   ];
 
-  const futureInitiatives = [
-    {
-      icon: "🌱",
-      title: "Sustainable Farming",
-      description: "Partnering with farmers for sustainable spice cultivation"
-    },
-    {
-      icon: "🔬",
-      title: "Quality Innovation",
-      description: "Advanced testing facilities for superior quality assurance"
-    },
-    {
-      icon: "🌍",
-      title: "Global Reach",
-      description: "Expanding to new international markets with premium products"
-    }
-  ];
-
   return (
-    <section className="future-products-section">
-      <div className="section-header fade-in">
-        <h2>Future of Spice Excellence</h2>
-        <p>Innovating the future of global spice trade with premium quality and sustainability</p>
-      </div>
+    <section className="future-products">
+      <div className="future-products-container">
+        <div className="section-header fade-in">
+          <h2>Future of Spice Excellence</h2>
+          <p>Innovating the future of global spice trade with premium quality and sustainability</p>
+        </div>
 
-      <div className="products-showcase">
-        {products.map((product, index) => (
-          <div key={index} className="product-card fade-in">
-            <div className="product-image-container">
-              <img src={product.image} alt={product.name} />
-              <div className="product-overlay">
-                
+        <div className="products-showcase">
+          {products.map((product, index) => (
+            <div key={index} className="product-card fade-in">
+              <div className="product-image-container">
+                <img src={product.image} alt={product.name} />
+                <div className="product-overlay"></div>
+              </div>
+              <div className="product-info">
+                <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <div className="product-features">
+                  {product.features.map((feature, idx) => (
+                    <span key={idx} className="feature-tag">{feature}</span>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className="product-info">
-              <h3>{product.name}</h3>
-              <p>{product.description}</p>
-              <div className="product-features">
-                {product.features.map((feature, idx) => (
-                  <span key={idx} className="feature-tag">{feature}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-
-      
-
-      
     </section>
   );
 };

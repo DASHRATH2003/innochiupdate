@@ -1,138 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './GlobalNetwork.css';
+import globeVideo from '../assets/innochiviewo.mp4';
 
 const GlobalNetwork = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const rotatingContent = [
-    {
-      title: "Global Trade Excellence",
-      description: "Connecting markets across continents",
-      icon: "🌐"
-    },
-    {
-      title: "Quality Assurance",
-      description: "Premium products, verified standards",
-      icon: "✨"
-    },
-    {
-      title: "Reliable Shipping",
-      description: "Swift and secure worldwide delivery",
-      icon: "🚢"
-    }
-  ];
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % rotatingContent.length);
-    }, 3000);
-    return () => clearInterval(timer);
+    const video = videoRef.current;
+    if (video) {
+      // Ensure video plays immediately
+      video.play().catch(error => {
+        console.log("Video autoplay failed:", error);
+      });
+
+      // Handle video ending to ensure seamless loop
+      video.addEventListener('timeupdate', () => {
+        if (video.currentTime >= video.duration - 0.1) {
+          video.currentTime = 0;
+        }
+      });
+
+      // Preload the video for smoother playback
+      video.preload = "auto";
+
+      // Handle visibility change to keep video playing
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          video.play().catch(() => {});
+        }
+      });
+    }
+
+    return () => {
+      if (video) {
+        video.removeEventListener('timeupdate', () => {});
+      }
+      document.removeEventListener('visibilitychange', () => {});
+    };
   }, []);
 
   return (
     <div className="global-network">
       <div className="global-network__content">
-        <div className="global-network__center-piece">
-          <div className="global-network__rotating-content">
-            <div className="global-network__rotating-icon">{rotatingContent[currentSlide].icon}</div>
-            <h3 className="global-network__rotating-title">{rotatingContent[currentSlide].title}</h3>
-            <p className="global-network__rotating-description">{rotatingContent[currentSlide].description}</p>
-          </div>
-          <div className="global-network__circle-orbit">
-            <div className="global-network__orbit-item">🌾</div>
-            <div className="global-network__orbit-item">📦</div>
-            <div className="global-network__orbit-item">🛥️</div>
-            <div className="global-network__orbit-item">🌿</div>
-          </div>
+        <div className="globe-container">
+          <video 
+            ref={videoRef}
+            className="globe-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+          >
+            <source src={globeVideo} type="video/mp4" />
+          </video>
         </div>
-
-        <div className="global-network__section">
-          <h2 className="global-network__title">
-            <span className="global-network__title-text">
-              <span className="global-network__title-export">Export</span>
-              <span className="global-network__title-separator">/</span>
-              <span className="global-network__title-import">Import</span>
-            </span>
-          </h2>
-          <ul className="global-network__list">
-            {/* Export Countries */}
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">JP</span>
-              Japan
-              <span className="global-network__continent-marker">Asia</span>
-            </li>
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">AE</span>
-              UAE
-              <span className="global-network__continent-marker">Middle East</span>
-            </li>
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">SG</span>
-              Singapore
-              <span className="global-network__continent-marker">Asia</span>
-            </li>
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">MY</span>
-              Malaysia
-              <span className="global-network__continent-marker">Asia</span>
-            </li>
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">LK</span>
-              Sri Lanka
-              <span className="global-network__continent-marker">Asia</span>
-            </li>
-            <li className="global-network__item global-network__item--export">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">TH</span>
-              Thailand
-              <span className="global-network__continent-marker">Asia</span>
-            </li>
-
-            {/* Import Countries */}
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">CA</span>
-              Canada
-              <span className="global-network__continent-marker">North America</span>
-            </li>
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">AU</span>
-              Australia
-              <span className="global-network__continent-marker">Oceania</span>
-            </li>
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">NZ</span>
-              New Zealand
-              <span className="global-network__continent-marker">Oceania</span>
-            </li>
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">US</span>
-              United States
-              <span className="global-network__continent-marker">North America</span>
-            </li>
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">GB</span>
-              United Kingdom
-              <span className="global-network__continent-marker">Europe</span>
-            </li>
-            <li className="global-network__item global-network__item--import">
-              <span className="global-network__arrow">→</span>
-              <span className="global-network__country-code">DE</span>
-              Germany
-              <span className="global-network__continent-marker">Europe</span>
-            </li>
-          </ul>
-        </div>
-
-        
       </div>
     </div>
   );

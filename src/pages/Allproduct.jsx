@@ -9,21 +9,21 @@ import ProductCard from '../components/ProductCard';
 import cardamomSmall from '../assets/cardamom.jpg';
 import cardamomLarge from '../assets/cardamomlarge.webp';
 import pepper from '../assets/pepper.jpg';
-import birdsEyeChilli from '../assets/birdseyechiliphoto.avif';
+import birdsEyeChilli from '../assets/drybirdchili.jpeg';
 import capsicum from '../assets/Capsicum.webp';
-import chilli from '../assets/redchili.jpg';
+import chilli from '../assets/drychili.webp';
 import paprika from '../assets/paprika.webp';
 import ginger from '../assets/ganger11.webp';
 import turmeric from '../assets/turemeric.jpg';
 import coriander from '../assets/coriyanderseeds.jpg';
 import cumin from '../assets/Cumin.jpg';
-import fennel from '../assets/whitepepp11.jpg';
+import fennel from '../assets/feenalseed.webp';
 import fenugreek from '../assets/Fenugreek.webp';
 import celery from '../assets/caleryseeds.jpg';
 import aniseed from '../assets/Aniseed.webp';
 import ajowan from '../assets/Ajowan (Ajwain).jpg';
 import caraway from '../assets/Caraway.webp';
-import dill from '../assets/Dill.jpg';
+import dill from '../assets/drydil.jpg';
 import cinnamon from '../assets/Cinnamon.webp';
 import cassia from '../assets/cassiabark.jpg';
 import garlic from '../assets/Garlic.webp';
@@ -32,7 +32,7 @@ import kokam from '../assets/Kokam.jpg';
 import mint from '../assets/Mint.jpg';
 import mustard from '../assets/Mustard.png';
 import parsley from '../assets/Parsley.webp';
-import pomegranate from '../assets/Pomegranate Seed.jpg';
+import pomegranate from '../assets/drypomegentseed.webp';
 import saffron from '../assets/saffron11.avif';
 import vanilla from '../assets/vanila11.jpg';
 import tejpat from '../assets/tejpat.webp';
@@ -46,14 +46,14 @@ import clove from '../assets/Clove.webp';
 import asafoetida from '../assets/Asafoetida.webp';
 import camboge from '../assets/Camboge (Kokum).jpg';
 import hyssop from '../assets/Hyssop.jpg';
-import juniper from '../assets/Juniper Berry.jpg';
+import juniper from '../assets/drieddill.webp';
 import bayLeaf from '../assets/Bay Leaf.jpg';
 import lovage from '../assets/lovies111.webp';
 import marjoram from '../assets/marjoram11.jpg';
 import nutmeg from '../assets/Nutmeg.webp';
 import mace from '../assets/Mace.webp';
 import basil from '../assets/basilhd.webp';
-import poppy from '../assets/whiteseeds.webp';
+import poppy from '../assets/poppyseeds.webp'; 
 import allspice from '../assets/Allspice.webp';
 import rosemary from '../assets/Rosemary.jpg';
 import sage from '../assets/Sage.webp';
@@ -67,7 +67,7 @@ const AllProducts = ({ category }) => {
   const allProducts = [
     {
       id: 1,
-      name: 'Cardamom (Small)',
+      name: 'Cardamom ',
       image: cardamomSmall,
       category: 'spices',
       description: 'Premium quality small cardamom, carefully handpicked from the finest Indian plantations. Known for its intense aroma and distinctive flavor. Perfect for both sweet and savory dishes.'
@@ -88,7 +88,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 4,
-      name: "Bird's Eye Chilli",
+      name: "Dry Bird's Chili Whole",
       image: birdsEyeChilli,
       category: 'spices',
       description: 'One of the spiciest natural chili varieties. Prized for its intense heat and vibrant red color. Adds a powerful kick to any dish.'
@@ -102,7 +102,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 6,
-      name: 'Red Chilli',
+      name: 'Dry Guntur Chili',
       image: chilli,
       category: 'spices',
       description: 'Premium quality red chilies from Indian farms. Known for balanced heat and rich flavor. Essential for authentic Indian cuisine.'
@@ -186,7 +186,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 18,
-      name: 'Dill',
+      name: ' Dry Dill',
       image: dill,
       category: 'spices',
       description: 'Fresh dill seeds with intense aroma. Known for their unique flavor profile. Perfect for pickling and seasoning.'
@@ -347,7 +347,7 @@ const AllProducts = ({ category }) => {
     },
     {
       id: 41,
-      name: 'Juniper Berries',
+      name: 'Dried Dill',
       image: juniper,
       category: 'spices',
       description: 'Premium juniper berries. Features pine-like flavor. Essential in European cuisine and gin Essential in European cuisine and gin.'

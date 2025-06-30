@@ -95,15 +95,39 @@
   margin-bottom: 15px;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 .contact-link {
-  color: #2c5282;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0a3a5e;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .contact-link:hover {
-  color: #1a365d;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  color: #0056b3;
+}
+
+.contact-link i {
+  font-size: 1rem;
+  color: #0a3a5e;
+}
+
+.contact-link:hover i {
+  color: #0056b3;
 }
 
 /* Main Contact Section */
@@ -426,6 +450,14 @@
   
   .certification-icon i {
     font-size: 18px;
+  }
+
+  .contact-links {
+    align-items: center;
+  }
+  
+  .contact-link {
+    font-size: 0.9rem;
   }
 }
 

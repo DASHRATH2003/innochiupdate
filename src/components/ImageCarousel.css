@@ -3,10 +3,11 @@
 /* Base Styles */
 .hero-section {
   position: relative;
-  width: 100%;
   height: 100vh;
-  background-color: #fff;
+  width: 100%;
   overflow: hidden;
+  margin-bottom: -2px; /* Remove any gap between sections */
+  background-color: transparent;
 }
 
 /* Hero Content */
@@ -21,6 +22,7 @@
   text-align: left;
   color: white;
   padding: 2rem;
+  background-color: transparent;
 }
 
 .company-name {
@@ -62,12 +64,14 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: transparent;
 }
 
 .carousel {
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: transparent;
 }
 
 .carousel-slide {
@@ -75,6 +79,7 @@
   width: 100%;
   height: 100%;
   transition: transform 0.5s ease-in-out;
+  background-color: transparent;
 }
 
 .carousel-slide::after {

@@ -1,7 +1,16 @@
-.future-products-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  overflow: hidden;
+.future-products {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin-top: -2px; /* To prevent any gap between sections */
+}
+
+.future-products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .section-header {
@@ -278,8 +287,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .future-products-section {
-    padding: 60px 15px;
+  .future-products {
+    padding: 3rem 1rem;
   }
 
   .section-header h2 {
@@ -309,8 +318,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .future-products-section {
-    padding: 40px 10px;
+  .future-products {
+    padding: 2rem 1rem;
   }
 
   .product-image-container {
