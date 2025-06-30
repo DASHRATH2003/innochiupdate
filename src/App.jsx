@@ -31,9 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/products" element={<AllProducts />} />
-          <Route path="/products/spices" element={<AllProducts category="spices" />} />
-          <Route path="/products/herbs" element={<AllProducts category="herbs" />} />
-          <Route path="/products/seeds" element={<AllProducts category="seeds" />} />
+          <Route path="/products/:category" element={<AllProducts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />

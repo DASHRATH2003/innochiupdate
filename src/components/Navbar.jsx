@@ -121,16 +121,13 @@ const Navbar = () => {
               className={`nav-item dropdown ${
                 activeDropdown === 0 ? "active" : ""
               }`}
-              onClick={() => toggleDropdown(0)}
             >
-              <Link
-                to="/products"
-                className={`nav-links ${
-                  location.pathname.includes("/products") ? "active" : ""
-                }`}
+              <div 
+                className="nav-links"
+                onClick={() => toggleDropdown(0)}
               >
                 Products <span className="dropdown-arrow">▼</span>
-              </Link>
+              </div>
               <ul
                 className={`dropdown-menu ${
                   activeDropdown === 0 ? "active" : ""
@@ -141,9 +138,11 @@ const Navbar = () => {
                     <Link
                       to={category.path}
                       className="dropdown-item"
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation();
                         setIsOpen(false);
                         setActiveDropdown(null);
+                        navigate(category.path);
                       }}
                     >
                       {category.title}

@@ -59,8 +59,9 @@ import rosemary from '../assets/Rosemary.jpg';
 import sage from '../assets/Sage.webp';
 import savory from '../assets/Savory.webp';
 
-const AllProducts = ({ category }) => {
+const AllProducts = () => {
   const navigate = useNavigate();
+  const { category } = useParams(); // Get category from URL params
   const [selectedCategory, setSelectedCategory] = useState(category || 'all');
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -432,31 +433,30 @@ const AllProducts = ({ category }) => {
   ];
 
   useEffect(() => {
+    // Update selected category when route parameter changes
+    setSelectedCategory(category || 'all');
+  }, [category]);
+
+  useEffect(() => {
+    // Filter products based on selected category
     if (selectedCategory === 'all') {
       setFilteredProducts(allProducts);
     } else {
-      setFilteredProducts(allProducts.filter(product => product.category === selectedCategory));
+      const filtered = allProducts.filter(
+        product => product.category.toLowerCase() === selectedCategory.toLowerCase()
+      );
+      setFilteredProducts(filtered);
     }
   }, [selectedCategory]);
 
-  const categories = [
-    { id: 'all', name: 'All Products' },
-    { id: 'spices', name: 'Spices' },
-    { id: 'herbs', name: 'Herbs' },
-    { id: 'seeds', name: 'Seeds' }
-  ];
-
-  const handleQuit = () => {
-    window.close();
-  };
-
-  const handleInquiry = () => {
-    navigate('/contact');
+  const handleCategoryChange = (newCategory) => {
+    setSelectedCategory(newCategory);
+    navigate(`/products/${newCategory}`);
   };
 
   return (
     <div className="products-page">
-      <button className="quit-button" onClick={handleQuit}>
+      <button className="quit-button" onClick={() => window.close()}>
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 24 24" 
@@ -483,15 +483,30 @@ const AllProducts = ({ category }) => {
       <section className="categories-section">
         <div className="container">
           <div className="categories-grid slide-in-left">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                className={`category-btn hover-lift ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category.id)}
-              >
-                {category.name}
-              </button>
-            ))}
+            <button
+              className={`category-btn hover-lift ${selectedCategory === 'all' ? 'active' : ''}`}
+              onClick={() => handleCategoryChange('all')}
+            >
+              All Products
+            </button>
+            <button
+              className={`category-btn hover-lift ${selectedCategory === 'spices' ? 'active' : ''}`}
+              onClick={() => handleCategoryChange('spices')}
+            >
+              Spices
+            </button>
+            <button
+              className={`category-btn hover-lift ${selectedCategory === 'herbs' ? 'active' : ''}`}
+              onClick={() => handleCategoryChange('herbs')}
+            >
+              Herbs
+            </button>
+            <button
+              className={`category-btn hover-lift ${selectedCategory === 'seeds' ? 'active' : ''}`}
+              onClick={() => handleCategoryChange('seeds')}
+            >
+              Seeds
+            </button>
           </div>
         </div>
       </section>
@@ -508,7 +523,7 @@ const AllProducts = ({ category }) => {
                 <div className="product-info">
                   <h3>{product.name}</h3>
                   <p className="product-description">{product.description}</p>
-                  <button className="inquiry-btn hover-scale" onClick={handleInquiry}>Send Enquiry</button>
+                  <button className="inquiry-btn hover-scale" onClick={() => navigate('/contact')}>Send Enquiry</button>
                 </div>
               </div>
             ))}
@@ -522,7 +537,7 @@ const AllProducts = ({ category }) => {
           <div className="cta-content">
             <h2>Can't Find What You're Looking For?</h2>
             <p>Contact us for custom orders and specific requirements</p>
-            <button className="cta-button hover-scale" onClick={handleInquiry}>Contact Us</button>
+            <button className="cta-button hover-scale" onClick={() => navigate('/contact')}>Contact Us</button>
           </div>
         </div>
       </section>
