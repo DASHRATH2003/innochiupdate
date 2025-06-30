@@ -19,8 +19,8 @@
 .footer-logo {
   margin-bottom: 1.5rem;
   background: white;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 6px;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -29,13 +29,13 @@
 }
 
 .footer-logo-img {
-  max-width: 180px;
+  max-width: 150px;
   height: auto;
   display: block;
 }
 
 .footer-logo img {
-  max-width: 180px;
+  max-width: 150px;
   height: auto;
   margin-left: 0;
   transition: transform 0.3s ease;
@@ -242,6 +242,15 @@
 
   .footer-bottom-links {
     justify-content: center;
+  }
+
+  .footer-logo-img,
+  .footer-logo img {
+    max-width: 120px;
+  }
+  
+  .footer-logo {
+    padding: 0.4rem;
   }
 }
 
