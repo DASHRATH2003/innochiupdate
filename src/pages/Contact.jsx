@@ -246,14 +246,8 @@ const Contact = () => {
                 <div className="info-section social-info slide-in-right delay-2">
                   <h3>Connect With Us</h3>
                   <div className="social-links">
-                    <a
-                      href="https://linkedin.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </a>
+                    
+                     
                     <a
                       href="https://twitter.com"
                       target="_blank"
