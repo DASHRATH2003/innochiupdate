@@ -476,7 +476,8 @@
   }
 
   .navbar-logo-img {
-    height: 50px;
+    height: 60px;
+    margin-top: 15px;
   }
 
   .scrolled .navbar-logo-img {
