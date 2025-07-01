@@ -1,5 +1,6 @@
 // src/pages/About.jsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./About.css";
 import "../styles/quality.css";
 
@@ -11,6 +12,12 @@ import reachImage from "../assets/reachimage.jpg";
 import certificationImage from "../assets/certificate1.webp";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="about-page">
       {/* Hero Section */}
@@ -312,7 +319,7 @@ const About = () => {
                 everywhere. At Inochi International, your satisfaction is our
                 promise.
               </p>
-              <button className="cta-button">Contact Us</button>
+              <button className="cta-button" onClick={handleContactClick}>Contact Us</button>
             </div>
           </div>
         </section>
