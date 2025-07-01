@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/innochilogo.gif";
+import logo from "../assets/logoinnochi.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,15 +59,16 @@ const Navbar = () => {
 
   return (
     <>
-     
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-container">
           <div className="navbar-logo">
-            <img
-              src={logo}
-              alt="Inochi International Logo"
-              className="navbar-logo-img"
-            />
+            <div className="logo-3d-container">
+              <img
+                src={logo}
+                alt="Inochi International Logo"
+                className="navbar-logo-img"
+              />
+            </div>
           </div>
 
           <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>

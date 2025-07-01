@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CompanyValues.css';
-import qualityImage from '../assets/qualityansepty.jpeg';
+import qualityImage from '../assets/mission.jpeg';
 import reachImage from '../assets/reachimage.jpg';
 import visionImage from '../assets/ourvision.jpeg';
 

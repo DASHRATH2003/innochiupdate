@@ -22,15 +22,17 @@
   transform-style: preserve-3d;
   will-change: transform;
   perspective: 1000px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
-.globe-video {
+.globe-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  animation: spin 20s infinite linear;
-  background: transparent;
+  animation: spin 20s linear infinite;
   transform-origin: center center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -38,10 +40,14 @@
   -webkit-perspective: 1000;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  will-change: transform;
 }
 
 @keyframes spin { 
-  100% { 
+  from { 
+    transform: rotate(0deg);
+  }
+  to { 
     transform: rotate(360deg);
   }
 }
@@ -49,7 +55,7 @@
 /* Ensure smooth animation on high-refresh displays */
 @media (prefers-reduced-motion: no-preference) {
   .globe-video {
-    animation-duration: 20s;
+    animation-timing-function: linear;
   }
 }
 

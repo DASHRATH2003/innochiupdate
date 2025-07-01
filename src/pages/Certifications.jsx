@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Certifications.css';
+import CertificateModal from '../components/CertificateModal';
 
 // Import certification images
 import mcaLogo from '../assets/ministryofcorporetion.webp';
@@ -11,41 +12,50 @@ import spiceboardLogo from '../assets/spiceboard.webp';
 import fssaiLogo from '../assets/fssai.webp';
 
 const Certifications = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
   const certificates = [
     {
       id: 1,
       name: 'Ministry of Corporate Affairs',
-      image: mcaLogo
+      image: mcaLogo,
+      description: 'Government of India'
     },
     {
       id: 2,
       name: 'Department of Commerce',
-      image: commerceLogo
+      image: commerceLogo,
+      description: 'Government of India'
     },
     {
       id: 3,
       name: 'Income Tax Department',
-      image: taxLogo
+      image: taxLogo,
+      description: 'Government of India'
     },
     {
       id: 4,
       name: 'DGFT Registration',
-      image: dgftLogo
+      image: dgftLogo,
+      description: 'Directorate General of Foreign Trade'
     },
     {
       id: 5,
       name: 'ICEGATE',
-      image: icegateLogo
+      image: icegateLogo,
+      description: 'Indian Customs EDI Gateway'
     },
     {
       id: 6,
       name: 'Spices Board India',
-      image: spiceboardLogo
+      image: spiceboardLogo,
+      description: 'Ministry of Commerce & Industry'
     },
     {
       id: 7,
       name: 'FSSAI',
-      image: fssaiLogo
+      image: fssaiLogo,
+      description: 'Food Safety and Standards Authority of India'
     }
   ];
 
@@ -61,9 +71,26 @@ const Certifications = () => {
             <div className="certification-image">
               <img src={cert.image} alt={cert.name} />
             </div>
+            <div className="certification-content">
+              <h3>{cert.name}</h3>
+              <p className="certification-description">{cert.description}</p>
+              <button 
+                className="view-certificate-btn"
+                onClick={() => setSelectedCertificate(cert)}
+              >
+                View Certificate <span className="arrow">→</span>
+              </button>
+            </div>
           </div>
         ))}
       </div>
+
+      {selectedCertificate && (
+        <CertificateModal
+          certificate={selectedCertificate}
+          onClose={() => setSelectedCertificate(null)}
+        />
+      )}
     </div>
   );
 };

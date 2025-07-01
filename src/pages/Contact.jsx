@@ -233,6 +233,7 @@ const Contact = () => {
                   <address>
                     <i className="fas fa-map-marker-alt"></i>
                     <div>
+                    <span style={{ fontSize: "14px" }}>INOCHI INTERNATIONAL PVT LTD</span>
                       <p>185/1A, 5th Cross Rd,</p>
                       <p>near Raghavendra Swamy Temple Road,</p>
                       <p>Gururaja Layout, Doddanekundi,</p>

@@ -40,10 +40,60 @@
   align-items: center;
   text-decoration: none;
   height: 100%;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  perspective: 1000px;
+  position: relative;
+}
+
+.logo-3d-container {
+  perspective: 2000px;
+  transform-style: preserve-3d;
+  width: auto;
+  height: 100px;
+}
+
+.navbar-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  
+  filter: blur(15px);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fireEffect 3s infinite;
+  z-index: -1;
+}
+
+.navbar-logo::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(0deg, #ff9933, #ffcc00);
+  filter: blur(10px);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: fireEffect 2s infinite;
+  z-index: -1;
+}
+
+@keyframes fireEffect {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 0.6;
+  }
 }
 
 .navbar-logo:hover {
@@ -52,33 +102,33 @@
 
 .navbar-logo-img {
   width: auto;
-  height: 80px;
+  height: 100%;
   transform-style: preserve-3d;
-  animation: rotateLogo 8s linear infinite;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  animation: stable3D 12s linear infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
   backface-visibility: visible;
   transition: all 0.3s ease;
+  transform-origin: center center;
+  will-change: transform;
 }
 
 .navbar-logo-img:hover {
   animation-play-state: paused;
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+  transform: scale(1.1);
 }
 
-@keyframes rotateLogo {
+@keyframes stable3D {
   0% {
-    transform: rotateY(0deg) translateZ(20px);
-  }
-  50% {
-    transform: rotateY(180deg) translateZ(-20px);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: rotateY(360deg) translateZ(20px);
+    transform: rotateY(360deg);
   }
 }
 
-.scrolled .navbar-logo-img {
-  height: 75px;
+.scrolled .logo-3d-container {
+  height: 90px;
 }
 
 /* Menu Icon (Hamburger) */

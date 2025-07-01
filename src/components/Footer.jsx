@@ -19,6 +19,9 @@ const Footer = () => {
             />
           </div>
           <p className="company-description">
+          <span style={{ fontSize: "14px" }}>INOCHI INTERNATIONAL PVT LTD</span>
+          <br />
+            
             Your trusted partner in global trade, specializing in premium quality Indian products.
             We ensure reliable and efficient delivery worldwide.
           </p>
@@ -29,9 +32,7 @@ const Footer = () => {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
+           
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
@@ -79,6 +80,8 @@ const Footer = () => {
             <li className="address-item">
               <i className="fas fa-map-marker-alt"></i>
               <div className="address-content">
+              <span style={{ fontSize: "14px" }}>INOCHI INTERNATIONAL PVT LTD</span>
+
                 <span>185/1A, 5th Cross Rd,</span>
                 <span>near Raghavendra Swamy Temple Road,</span>
                 <span>Gururaja Layout, Doddanekundi,</span>

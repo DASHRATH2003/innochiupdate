@@ -1,6 +1,6 @@
 // src/pages/Shop.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Shop.css';
 import '../styles/animations.css';
 import ProductCard from '../components/ProductCard';
@@ -8,7 +8,8 @@ import ProductCard from '../components/ProductCard';
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState('featured');
   const [currentPage, setCurrentPage] = useState(0);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages] = useState(1);
+  const navigate = useNavigate();
 
   const featuredProducts = [
     {
@@ -91,7 +92,12 @@ const Shop = () => {
                 <div className="product-image">
                   <img src={product.image} alt={product.name} />
                   <div className="product-overlay">
-                    <button className="view-details hover-scale">View Details</button>
+                    <button 
+                      className="view-details hover-scale"
+                      onClick={() => navigate(`/product/${product.id}`)}
+                    >
+                      View Details
+                    </button>
                   </div>
                 </div>
                 <div className="product-info">
