@@ -536,6 +536,10 @@ const AllProducts = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Can't Find What You're Looking For?</h2>
+            <div className="title-underline">
+              <div className="line-yellow"></div>
+              <div className="line-red"></div>
+            </div>
             <p>Contact us for custom orders and specific requirements</p>
             <button className="cta-button hover-scale" onClick={() => navigate('/contact')}>Contact Us</button>
           </div>

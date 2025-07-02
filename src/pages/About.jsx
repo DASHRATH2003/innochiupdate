@@ -6,16 +6,16 @@ import "../styles/quality.css";
 
 import heroImage from "../assets/spiceinternational.png";
 import spicesImage from "../assets/spiceexport.webp";
-import aboutImage from "../assets/indianspiceall.jpg"
+import aboutImage from "../assets/indianspiceall.jpg";
 import qualityImage from "../assets/Basmatirice.jpg";
 import reachImage from "../assets/reachimage.jpg";
-import certificationImage from "../assets/certificate1.webp";
+import ministryLogo from "../assets/ministryofcorporetion.webp";
 
 const About = () => {
   const navigate = useNavigate();
 
   const handleContactClick = () => {
-    navigate('/contact');
+    navigate("/contact");
   };
 
   return (
@@ -24,6 +24,10 @@ const About = () => {
       <section className="about-hero">
         <div className="hero-about">
           <h1 className="about-title">About Us</h1>
+          <div className="title-underline">
+            <div className="line-yellow"></div>
+            <div className="line-red"></div>
+          </div>
         </div>
       </section>
 
@@ -32,71 +36,81 @@ const About = () => {
         <div className="container">
           <div className="welcome-content">
             <div className="welcome-text">
-              <h2><span className="welcome-text">Welcome To</span>Inochi International Pvt Ltd</h2>
-              <div className="line-yellow"></div>
-              <div className="line-red"></div>
-              
+              <h2>Welcome To Inochi International Pvt Ltd</h2>
+              <div className="title-underline">
+                <div className="line-yellow"></div>
+                <div className="line-red"></div>
+              </div>
               <p className="welcome-description">
                 Welcome to Inochi International Pvt. Ltd, a Bangalore-based
                 exporter of the finest Indian spices and premium basmati rice.
-                Established in 2023 and headquartered in Doddanekundi (Bangalore), we bring the vibrant flavors of India directly to
+                Established in 2023 and headquartered in Doddanekundi
+                (Bangalore), we bring the vibrant flavors of India directly to
                 discerning customers in Japan and beyond.
-
-                At Inochi International, we specialize in the global export and import of premium-quality goods, with a primary focus on Indian spices, agri-commodities, and food-grade products. Headquartered in India, we operate with a commitment to transparency, sustainability, and excellence in every shipment we handle. Our global trade network spans across Asia, Europe, the Middle East, Africa, and North America.
+              </p>
+              <p className="welcome-description">
+                At Inochi International, we specialize in the global export and
+                import of premium-quality goods, with a primary focus on Indian
+                spices, agri-commodities, and food-grade products. Headquartered
+                in India, we operate with a commitment to transparency,
+                sustainability, and excellence in every shipment we handle. Our
+                global trade network spans across Asia, Europe, the Middle East,
+                Africa, and North America.
               </p>
             </div>
             <div className="welcome-img-container">
-              <img src={heroImage} alt="Welcome to Inochi" className="welcome-img" />
+              <img
+                src={heroImage}
+                alt="Welcome to Inochi"
+                className="welcome-img"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <section className="about-section">
-  <div className="about-container">
-    <div className="about-image">
-      <img src={aboutImage} alt="Inochi Spices" />
-    </div>
-    <div className="about-text">
-      <h2>About Our Products</h2>
-      <div className="title-underline">
-        <div className="line-yellowline"></div>
-        <div className="line-redline"></div>
-      </div>
-      <p>
-        Inochi International stands at the intersection of heritage and innovation.
-        With direct partnerships in India, Vietnam, and Turkey, we maintain complete
-        control over sourcing, ensuring every spice we deliver reflects purity,
-        potency, and purpose. Whether it's turmeric from Tamil Nadu or pepper from
-        Kerala, our products uphold the legacy of spice-rich trade, with a modern
-        commitment to transparency and global excellence.
-      </p>
-      <br />
-      <p>
-        At Inochi International, we are committed to redefining the global spice trade
-        with integrity, innovation, and a relentless focus on quality. As a trusted
-        name in premium spice exports and imports, we serve global markets with a
-        diverse range of handpicked, ethically sourced spices that tell a story of
-        tradition and taste.
-      </p>
-    </div>
-  </div>
-</section>
-
-
+        <div className="about-container">
+          <div className="about-image">
+            <img src={aboutImage} alt="Inochi Spices" loading="lazy" />
+          </div>
+          <div className="about-text">
+            <h2>About Our Products</h2>
+            <div className="title-underline">
+              <div className="line-yellow"></div>
+              <div className="line-red"></div>
+            </div>
+            <p>
+              Inochi International stands at the intersection of heritage and
+              innovation. With direct partnerships in India, Vietnam, and
+              Turkey, we maintain complete control over sourcing, ensuring every
+              spice we deliver reflects purity, potency, and purpose. Whether
+              it's turmeric from Tamil Nadu or pepper from Kerala, our products
+              uphold the legacy of spice-rich trade, with a modern commitment to
+              transparency and global excellence.
+            </p>
+            <p>
+              At Inochi International, we are committed to redefining the global
+              spice trade with integrity, innovation, and a relentless focus on
+              quality. As a trusted name in premium spice exports and imports,
+              we serve global markets with a diverse range of handpicked,
+              ethically sourced spices that tell a story of tradition and taste.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Main Content */}
       <main className="about-main-content">
-        {/* Introduction Section */}
-
         {/* Expertise Section */}
         <section className="expertise-section">
           <div className="container">
-          <h2 className="section-title">Our Experties</h2>
-          <div className="line-blue1"></div>
+            <h2 className="section-title">Our Expertise</h2>
+
+            <div className="line-red"></div>
+
             <div className="section-header">
-              
-              <div className="title-divider"></div>
               <p className="section-description">
                 At Inochi International, we specialize in:
               </p>
@@ -149,11 +163,11 @@ const About = () => {
         {/* Quality & Safety Section */}
         <section className="quality-safety-section">
           <div className="container">
-          <h2 className="section-title">Quality & Health</h2>
-          <div className="line-blue1"></div>
-            <div className="section-header">
+            <h2 className="section-title">Quality & Health</h2>
 
-              <div className="title-divider"></div>
+            <div className="line-red"></div>
+
+            <div className="section-header">
               <p className="section-intro">
                 At Inochi International, quality isn't just a process - it's our
                 promise. From farm to packaging, we implement rigorous standards
@@ -244,17 +258,24 @@ const About = () => {
             <div className="reach-content">
               <div className="reach-text">
                 <h2 className="section-title">Our Reach & Reputation</h2>
-                <div className="title-divider"></div>
+
+                <div className="line-red"></div>
+
                 <p className="reach-description">
                   Thanks to our unwavering commitment to excellence, our
                   products are trusted by leading star hotels, top restaurants,
                   major supermarkets, and hypermarkets throughout Japan. We
                   pride ourselves on a growing base of satisfied, repeat
-                  customers who consistently award us five-star ratings.
+                  customers who value our quality and reliability.
                 </p>
               </div>
               <div className="reach-img-container">
-                <img src={reachImage} alt="Our Reach" className="reach-img" />
+                <img
+                  src={reachImage}
+                  alt="Our Global Reach"
+                  className="reach-img"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -262,36 +283,39 @@ const About = () => {
 
         {/* Certifications Section */}
         <section className="certifications-section">
-          <div className="container">
-            <div className="certifications-content">
-              <div className="certifications-img-container">
+          <div className="certifications-content">
+            <div className="certifications-text">
+              <h2 className="section-title">Certifications & Approvals</h2>
+
+              <div className="line-red"></div>
+
+              <p className="certifications-description">
+                We adhere to the highest industry standards:
+              </p>
+            </div>
+            <div className="certifications-main-content">
+              <div className="certification-logo-container">
                 <img
-                  src={certificationImage}
-                  alt="Certifications"
-                  className="certifications-img"
+                  src={ministryLogo}
+                  alt="Ministry of Corporate Affairs"
+                  className="certification-logo"
+                  loading="lazy"
                 />
               </div>
-              <div className="certifications-text">
-                <h2 className="section-title">Certifications & Approvals</h2>
-                <div className="title-divider"></div>
-                <p className="certifications-description">
-                  We adhere to the highest industry standards:
-                </p>
-                <ul className="certifications-list">
-                  <li className="certification-item">
-                    Spice Board of India (Member)
-                  </li>
-                  <li className="certification-item">
-                    Bureau of Indian Standards (BIS)
-                  </li>
-                  <li className="certification-item">
-                    Food Safety and Standards Authority of India (FSSAI)
-                  </li>
-                  <li className="certification-item">
-                    Directorate General of Foreign Trade (DGFT) –
-                    Importer-Exporter Code (IEC) approved
-                  </li>
-                </ul>
+              <div className="certifications-list">
+                <div className="certification-item">
+                  Spice Board of India (Member)
+                </div>
+                <div className="certification-item">
+                  Bureau of Indian Standards (BIS)
+                </div>
+                <div className="certification-item">
+                  Food Safety and Standards Authority of India (FSSAI)
+                </div>
+                <div className="certification-item">
+                  Directorate General of Foreign Trade (DGFT) –
+                  Importer-Exporter Code (IEC) approved
+                </div>
               </div>
             </div>
           </div>
@@ -301,12 +325,9 @@ const About = () => {
         <section className="vision-section">
           <div className="vision-container">
             <h2 className="vision-title">Our Vision</h2>
-            
 
             <div className="vision-divider"></div>
-            <div className="line-blue11"></div>
 
-           
             <p className="vision-text">
               Building on our success in Japan, Inochi International is poised
               to expand its footprint into the Middle East and North America. We
@@ -327,7 +348,9 @@ const About = () => {
                 everywhere. At Inochi International, your satisfaction is our
                 promise.
               </p>
-              <button className="cta-button" onClick={handleContactClick}>Contact Us</button>
+              <button className="cta-button" onClick={handleContactClick}>
+                Contact Us
+              </button>
             </div>
           </div>
         </section>
