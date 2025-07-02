@@ -60,8 +60,8 @@ const About = () => {
     <div className="about-text">
       <h2>About Our Products</h2>
       <div className="title-underline">
-        <div className="line-yellow"></div>
-        <div className="line-blue"></div>
+        <div className="line-yellowline"></div>
+        <div className="line-redline"></div>
       </div>
       <p>
         Inochi International stands at the intersection of heritage and innovation.
@@ -93,7 +93,9 @@ const About = () => {
         <section className="expertise-section">
           <div className="container">
           <h2 className="section-title">Our Experties</h2>
+          <div className="line-blue1"></div>
             <div className="section-header">
+              
               <div className="title-divider"></div>
               <p className="section-description">
                 At Inochi International, we specialize in:
@@ -148,6 +150,7 @@ const About = () => {
         <section className="quality-safety-section">
           <div className="container">
           <h2 className="section-title">Quality & Health</h2>
+          <div className="line-blue1"></div>
             <div className="section-header">
 
               <div className="title-divider"></div>
@@ -298,7 +301,12 @@ const About = () => {
         <section className="vision-section">
           <div className="vision-container">
             <h2 className="vision-title">Our Vision</h2>
+            
+
             <div className="vision-divider"></div>
+            <div className="line-blue11"></div>
+
+           
             <p className="vision-text">
               Building on our success in Japan, Inochi International is poised
               to expand its footprint into the Middle East and North America. We

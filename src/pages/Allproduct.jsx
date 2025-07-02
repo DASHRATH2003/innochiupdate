@@ -218,21 +218,21 @@ const AllProducts = () => {
       name: 'Curry Leaf',
       image: curry,
       category: 'herbs',
-      description: 'Fresh and aromatic curry leaves. Adds authentic flavor to Indian dishes. Essential in South Indian cuisine Essential in South Indian cuisine..'
+      description: 'Fresh and aromatic curry leaves. Adds authentic flavor to Indian dishes. Essential in South Indian cuisine.'
     },
     {
       id: 23,
       name: 'Kokam',
       image: kokam,
       category: 'spices',
-      description: 'Traditional Indian kokum spice. Features unique cooling properties. Adds pleasant sourness to dishes Adds pleasant sourness to dishes.'
+      description: 'Traditional Indian kokum spice, known for its unique cooling properties. It adds a tangy, refreshing sourness to a variety of dishes.'
     },
     {
       id: 24,
       name: ' Dry Mint',
       image: mint,
       category: 'herbs',
-      description: 'Fresh and cooling mint leaves. Perfect for beverages and garnishing. Essential herb in global cuisine. Perfect for beverages and garnishing'
+      description: 'Fresh and cooling mint leaves, ideal for drinks and garnishes. A versatile herb used in cuisines around the world.'
     },
     {
       id: 25,
@@ -246,7 +246,7 @@ const AllProducts = () => {
       name: 'Parsley',
       image: parsley,
       category: 'herbs',
-      description: 'Fresh and vibrant parsley leaves. Adds bright flavor and color.  Perfect for garnishing and seasoning. Perfect for garnishing and seasoning'
+      description: 'Fresh and vibrant parsley leaves that bring bright flavor and color to dishes. Ideal for both garnishing and seasoning.'
     },
     {
       id: 27,
@@ -260,21 +260,21 @@ const AllProducts = () => {
       name: 'Saffron',
       image: saffron,
       category: 'spices',
-      description: 'Premium quality saffron threads. Known for intense color and aroma. Adds luxury to special dishes Known for intense color and aroma.'
+      description: 'Premium quality saffron threads prized for their vibrant color and rich fragrance, adding a touch of luxury to special dishes.'
     },
     {
       id: 29,
       name: 'Vanilla',
       image: vanilla,
       category: 'spices',
-      description: 'Premium Madagascar vanilla beans. Rich in flavor and aroma. Essential in baking and desserts. Premium Madagascar vanilla beans'
+      description: 'Madagascar vanilla beans, rich in flavor and aroma, are essential for baking and desserts, bringing a natural sweetness and depth.'
     },
     {
       id: 30,
       name: 'Tejpat',
       image: tejpat,
       category: 'herbs',
-      description: 'Traditional Indian bay leaves. Features distinct aromatic profile. Essential in North Indian cuisine. Essential in North Indian cuisine'
+      description: 'Traditional Indian bay leaves with a distinct aromatic profile, widely used in North Indian cuisine for their rich flavor.'
     },
     {
       id: 31,
@@ -288,21 +288,21 @@ const AllProducts = () => {
       name: 'Star Anise',
       image: starAnise,
       category: 'spices',
-      description: 'Premium quality star anise. Features distinct licorice flavor. Essential in Asian cuisine. Features distinct licorice flavor'
+      description: 'Premium quality star anise with a bold, licorice-like taste, widely used in Asian cuisine for its aromatic depth and unique flavor.'
     },
     {
       id: 33,
       name: 'Sweet Flag',
       image: sweetFlag,
       category: 'herbs',
-      description: 'Traditional sweet flag (vacha). Known for aromatic properties. Used in traditional medicine. Used in traditional medicine'
+      description: 'Traditional sweet flag (vacha), valued for its aromatic qualities and widely used in ancient healing practices and herbal remedies.'
     },
     {
       id: 34,
       name: 'Greater Galangal',
       image: greaterGalangal,
       category: 'spices',
-      description: 'Fresh greater galangal root. Features unique pine-like flavor. Essential in Southeast Asian cuisine  Essential in Southeast Asian cuisine.'
+      description: 'Fresh greater galangal root with a distinctive pine-like flavor, commonly used in Southeast Asian cuisine for its bold and aromatic profile.'
     },
     {
       id: 35,
@@ -316,14 +316,14 @@ const AllProducts = () => {
       name: 'Capers',
       image: caper,
       category: 'herbs',
-      description: 'Premium quality capers. Adds tangy, briny flavor. Essential in Mediterranean dishes Essential in Mediterranean dishes.'
+      description: 'Premium quality capers that bring a tangy, briny burst of flavor, commonly used to enhance Mediterranean dishes.'
     },
     {
       id: 37,
       name: 'Cloves',
       image: clove,
       category: 'spices',
-      description: 'Premium whole cloves. Features intense aroma and warmth. Essential in global cuisine Essential in global cuisine.'
+      description: 'Premium whole cloves with an intense aroma and warm, spicy flavor, widely used to enrich dishes in cuisines around the world.'
     },
     {
       id: 38,
@@ -351,14 +351,14 @@ const AllProducts = () => {
       name: 'Dried Dill',
       image: juniper,
       category: 'spices',
-      description: 'Premium juniper berries. Features pine-like flavor. Essential in European cuisine and gin Essential in European cuisine and gin.'
+      description: '"Premium juniper berries with a pine-like flavor, key to European culinary traditions and the distinct taste of gin.'
     },
     {
       id: 42,
       name: 'Bay Leaf',
       image: bayLeaf,
       category: 'herbs',
-      description: 'Premium dried bay leaves. Adds subtle depth to dishes. Perfect for soups and stews.Perfect for soups and stews.'
+      description: 'Premium dried bay leaves that add subtle depth and aroma to dishes, making them ideal for flavoring soups and stews.'
     },
     {
       id: 43,
@@ -386,21 +386,21 @@ const AllProducts = () => {
       name: 'Mace',
       image: mace,
       category: 'spices',
-      description: 'Premium quality mace. Delicate nutmeg-like flavor. Adds complexity to dishes  Delicate nutmeg-like flavor. Adds complexity to dishes.'
+      description: 'Premium quality mace with a subtle, nutmeg-like flavor that enhances dishes with a layer of warm, aromatic complexity.'
     },
     {
       id: 47,
       name: 'Basil',
       image: basil,
       category: 'herbs',
-      description: 'Fresh aromatic basil leaves. Perfect for Italian cuisine. Essential in pesto and garnishing Essential in pesto and garnishing.'
+      description: 'Fresh aromatic basil leaves, perfect for Italian cuisine and widely used in pesto, sauces, and as a flavorful garnish.'
     },
     {
       id: 48,
       name: 'Poppy Seeds',
       image: poppy,
       category: 'seeds',
-      description: 'Premium quality poppy seeds. Adds nutty texture and flavor. Perfect for baking and cooking Perfect for baking and cooking.'
+      description: 'Premium quality poppy seeds that offer a nutty texture and flavor, ideal for enhancing both sweet and savory recipes in baking and cooking.'
     },
     {
       id: 49,

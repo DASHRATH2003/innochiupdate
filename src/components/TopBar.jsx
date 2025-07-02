@@ -12,20 +12,19 @@ const TopBar = () => {
           <a href="#"><i className="fab fa-youtube"></i></a>
         </div>
         <div className="contact-section">
-          <a href="tel:+919686621257" className="contact-item">
+          <a href="tel:+919535520948" className="contact-item">
             <i className="fas fa-phone"></i>
             <span>+91 9535520948</span>
           </a>
-          <a href="tel:+919686621257" className="contact-item">
+          <a href="tel:+917892492739" className="contact-item">
             <i className="fas fa-phone"></i>
-            <span>
-            +91 7892492739</span>
+            <span>+91 7892492739</span>
           </a>
-          <a href="mailto:vijaykumar@inochiinternational.com" className="contact-item">
+          <a href="mailto:Vijayakumar@inochiinternational.com" className="contact-item">
             <i className="fas fa-envelope"></i>
             <span>Vijayakumar@inochiinternational.com</span>
           </a>
-          <a href="mailto:vijaykumar@inochiinternational.com" className="contact-item">
+          <a href="mailto:Rajesh@inochiinternational.com" className="contact-item">
             <i className="fas fa-envelope"></i>
             <span>Rajesh@inochiinternational.com</span>
           </a>

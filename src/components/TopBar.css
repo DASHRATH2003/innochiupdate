@@ -42,8 +42,8 @@
   gap: 30px;
   align-items: center;
   background-color: #002147;
-  padding: 5px 20px;      /* reduce vertical space */
-  height: auto;           /* or set a fixed height like 40px */
+  padding: 5px 20px;
+  height: auto;
 }
 
 .contact-item {
@@ -64,6 +64,10 @@
 .contact-item span {
   color: white;
   opacity: 0.9;
+}
+
+.contact-item:hover {
+  opacity: 0.8;
 }
 
 /* Fix overflow */
