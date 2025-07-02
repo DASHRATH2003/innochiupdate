@@ -32,9 +32,9 @@ const About = () => {
         <div className="container">
           <div className="welcome-content">
             <div className="welcome-text">
-            <h2><span class="welcome-text">Welcome</span> To Inochi international</h2>
-
+              <h2><span className="welcome-text">Welcome To</span>Inochi International Pvt Ltd</h2>
               <div className="line-yellow"></div>
+              <div className="line-red"></div>
               
               <p className="welcome-description">
                 Welcome to Inochi International Pvt. Ltd, a Bangalore-based

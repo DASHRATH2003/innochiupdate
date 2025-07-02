@@ -10,7 +10,7 @@ import cardamomSmall from '../assets/cardamom.jpg';
 import cardamomLarge from '../assets/cardamomlarge.webp';
 import pepper from '../assets/pepper.jpg';
 import birdsEyeChilli from '../assets/drybirdchili.jpeg';
-import capsicum from '../assets/Capsicum.webp';
+import capsicum from '../assets/Drycapsicum.webp';
 import chilli from '../assets/drychili.webp';
 import paprika from '../assets/paprika.webp';
 import ginger from '../assets/ganger11.webp';
@@ -29,9 +29,9 @@ import cassia from '../assets/cassiabark.jpg';
 import garlic from '../assets/Garlic.webp';
 import curry from '../assets/carryleaves.png';
 import kokam from '../assets/Kokam.jpg';
-import mint from '../assets/Mint.jpg';
+import mint from '../assets/Drymint.jpg';
 import mustard from '../assets/Mustard.png';
-import parsley from '../assets/Parsley.webp';
+import parsley from '../assets/dryparsly.webp';
 import pomegranate from '../assets/drypomegentseed.webp';
 import saffron from '../assets/saffron11.avif';
 import vanilla from '../assets/vanila11.jpg';
@@ -96,7 +96,7 @@ const AllProducts = () => {
     },
     {
       id: 5,
-      name: 'Capsicum',
+      name: ' Dry Capsicum',
       image: capsicum,
       category: 'herbs',
       description: 'Fresh and crispy capsicum with vibrant colors. Perfect for salads and cooking applications. Adds natural sweetness and crunch to dishes.'
@@ -229,7 +229,7 @@ const AllProducts = () => {
     },
     {
       id: 24,
-      name: 'Mint',
+      name: ' Dry Mint',
       image: mint,
       category: 'herbs',
       description: 'Fresh and cooling mint leaves. Perfect for beverages and garnishing. Essential herb in global cuisine. Perfect for beverages and garnishing'
@@ -365,21 +365,21 @@ const AllProducts = () => {
       name: 'Lovage',
       image: lovage,
       category: 'herbs',
-      description: 'Fresh lovage herb. Features celery-like flavor. Popular in European cuisine Popular in European cuisine. Popular in European cuisine'
+      description: 'Fresh lovage leaves with a bold, celery-like taste and hints of parsley. A traditional favorite in European kitchens for soups, stews, and broths.'
     },
     {
       id: 44,
       name: 'Marjoram',
       image: marjoram,
       category: 'herbs',
-      description: 'Fresh marjoram leaves. Sweet oregano-like flavor. Perfect for Mediterranean dishes Sweet oregano-like flavor. Perfect for Mediterranean dishes.'
+      description: 'Aromatic fresh marjoram leaves with a delicate, sweet flavor similar to oregano. Ideal for enhancing Mediterranean recipes and light sauces.'
     }, 
     {
       id: 45,
       name: 'Nutmeg',
       image: nutmeg,
       category: 'spices',
-      description: 'Premium whole nutmeg. Features warm, sweet notes. Perfect for sweet and savory dishes  Features warm, sweet notes. Perfect for sweet and savory dishes.'
+      description: 'Premium whole nutmeg with rich, warm sweetness and a hint of spice. Versatile for both sweet desserts and savory dishes.'
     },
     {
       id: 46,
@@ -407,28 +407,28 @@ const AllProducts = () => {
       name: 'Allspice',
       image: allspice,
       category: 'spices',
-      description: 'Premium allspice berries. Combines multiple spice flavors. Essential in Caribbean cuisine. Combines multiple spice flavors. Essential in Caribbean cuisine.'
+      description: 'Whole premium allspice berries offering a warm blend of clove, cinnamon, and nutmeg notes. A key ingredient in Caribbean cooking.'
     },
     {
       id: 50,
       name: 'Rosemary',
       image: rosemary,
       category: 'herbs',
-      description: 'Fresh rosemary sprigs. Features pine-like aroma. Perfect for Mediterranean dishes  Features pine-like aroma. Perfect for Mediterranean dishes.'
+      description: '"Fragrant rosemary sprigs with a crisp, piney scent. A classic addition to Mediterranean cuisine and roasted dishes.'
     },
     {
       id: 51,
       name: 'Sage',
       image: sage,
       category: 'herbs',
-      description: 'Fresh sage leaves. Earthy, peppery flavor. Perfect for poultry and stuffing. peppery flavor. Perfect for poultry and stuffing.'
+      description: 'Fresh sage leaves with a robust, earthy flavor and a hint of pepper. Ideal for seasoning poultry, stuffing, and hearty dishes.'
     },
     {
       id: 52,
       name: 'Savory',
       image: savory,
       category: 'herbs',
-      description: 'Fresh savory herb. Peppery thyme-like flavor. Popular in European cuisine. Fresh savory herb. Peppery thyme-like flavor. Popular in European cuisine' 
+      description: 'Aromatic savory herb with a bold, peppery taste reminiscent of thyme. Widely used in European cooking for its distinctive flavor.' 
     }
   ];
 

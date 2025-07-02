@@ -66,7 +66,7 @@ const Contact = () => {
                 <p>Quick response for your inquiries</p>
                 <div className="contact-links">
                   <a href="mailto:vijaykumar@inochiinternational.com" className="contact-link">
-                    <i className="fas fa-envelope"></i> vijaykumar@inochiinternational.com
+                    <i className="fas fa-envelope"></i> Vijayakumar@inochiinternational.com
                   </a>
                   <a href="mailto:Rajesh@inochiinternational.com" className="contact-link">
                     <i className="fas fa-envelope"></i> Rajesh@inochiinternational.com
@@ -221,7 +221,7 @@ const Contact = () => {
               {/* Contact Information */}
               <div className="contact-info-sidebar">
                 <div className="info-section company-info slide-in-right">
-                  <h3>Inochi International</h3>
+                  <h3>Inochi International Pvt Ltd</h3>
                   <p>
                     Your trusted partner in global trade, specializing in
                     premium quality Indian spices, herbs, and seeds.

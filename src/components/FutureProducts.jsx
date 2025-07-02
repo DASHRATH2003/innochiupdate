@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './FutureProducts.css';
-import cardamom from '../assets/cardamom.jpg';
+import cardamom from '../assets/cardamon11.jpg';
 import turmeric from '../assets/turemeric.jpg';
 import pepper from '../assets/pepper.jpg';
 

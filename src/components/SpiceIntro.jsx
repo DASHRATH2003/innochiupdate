@@ -6,7 +6,7 @@ import starAnise from "../assets/Star Anise.jpeg";
 import bayLeaf from "../assets/Bay Leaf.jpg";
 import garlic from "../assets/Garlic.webp";
 import cardamom from "../assets/cardamom.jpg";
-import blackPepper from "../assets/pepper.jpg";
+import blackPepper from "../assets/fragmentpaper.webp";
 import chili from "../assets/Chili.jpg";
 import fennel from "../assets/Fennel.jpeg";
 import nutmeg from "../assets/Nutmeg.webp";
@@ -14,7 +14,7 @@ import cinnamon from "../assets/Cinnamon.webp";
 import paprika from "../assets/paprika.webp";
 import mixedPeppercorns from "../assets/pepper.jpg";
 import ginger from "../assets/Ganger.jpg";
-import coriander from "../assets/coriyande.jpg";
+import coriander from "../assets/corienderseed.jpeg";
 import saffron from "../assets/Saffron.jpg";
 
 const SpiceIntro = () => {

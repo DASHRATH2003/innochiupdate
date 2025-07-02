@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import logo from '../assets/logoinnochi.png';
+import bottomLogo from '../assets/bottomlogo.mp4';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +12,16 @@ const Footer = () => {
         {/* Company Info Section */}
         <div className="footer-section">
           <div className="footer-logo">
-            <img
-              src={logo}
-              alt="Inochi International Logo"
-              className="footer-logo-img"
-            />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="footer-logo-video"
+            >
+              <source src={bottomLogo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <p className="company-description">
           <span style={{ fontSize: "14px" }}>INOCHI INTERNATIONAL PVT LTD</span>

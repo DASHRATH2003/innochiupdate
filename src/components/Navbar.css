@@ -13,13 +13,13 @@
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #629dca 0%, #b2c4d2 50%, #0a3a5e 100%);
+  background: linear-gradient(135deg, #63b8f0, #5389ac 50%, #082e4a 100%);
   transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-  height: 80px;
-  background: linear-gradient(135deg, #8c9eaa 0%, #5389ac 50%, #082e4a 100%);
+  height: 89px;
+  background: linear-gradient(135deg, #63b8f0, #5389ac 50%, #082e4a 100%);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
   top: 0;
 }
@@ -47,10 +47,11 @@
 }
 
 .logo-3d-container {
-  perspective: 2000px;
-  transform-style: preserve-3d;
-  width: auto;
-  height: 100px;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-logo::after {
@@ -129,6 +130,12 @@
 
 .scrolled .logo-3d-container {
   height: 90px;
+}
+
+.navbar-logo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Menu Icon (Hamburger) */
@@ -474,6 +481,7 @@
   .navbar-logo {
     padding: 5px;
   }
+  
 
   .navbar-logo-img {
     height: 60px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logoinnochi.png";
+import topLogo from "../assets/Toplogo.mp4";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,11 +63,16 @@ const Navbar = () => {
         <div className="navbar-container">
           <div className="navbar-logo">
             <div className="logo-3d-container">
-              <img
-                src={logo}
-                alt="Inochi International Logo"
-                className="navbar-logo-img"
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="navbar-logo-video"
+              >
+                <source src={topLogo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
