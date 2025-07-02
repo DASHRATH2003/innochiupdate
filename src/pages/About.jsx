@@ -24,10 +24,7 @@ const About = () => {
       <section className="about-hero">
         <div className="hero-about">
           <h1 className="about-title">About Us</h1>
-          <div className="title-underline">
-            <div className="line-yellow"></div>
-            <div className="line-red"></div>
-          </div>
+         
         </div>
       </section>
 
